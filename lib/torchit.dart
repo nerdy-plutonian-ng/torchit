@@ -1,8 +1,8 @@
-
-import 'torchit_platform_interface.dart';
+import 'package:torchit/torchit_method_channel.dart';
 
 class Torchit {
   Future<String?> getPlatformVersion() {
-    return TorchitPlatform.instance.getPlatformVersion();
+    return MethodChannelTorchit()
+        .getPlatformVersion(); //TorchitPlatform.instance.getPlatformVersion();
   }
 }
